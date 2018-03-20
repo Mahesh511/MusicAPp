@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		635EAE53206120F1007D0B3B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 635EAE52206120F1007D0B3B /* AppDelegate.m */; };
-		635EAE56206120F1007D0B3B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 635EAE55206120F1007D0B3B /* ViewController.m */; };
 		635EAE59206120F1007D0B3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 635EAE57206120F1007D0B3B /* Main.storyboard */; };
 		635EAE5B206120F1007D0B3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 635EAE5A206120F1007D0B3B /* Assets.xcassets */; };
 		635EAE5E206120F1007D0B3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 635EAE5C206120F1007D0B3B /* LaunchScreen.storyboard */; };
 		635EAE61206120F1007D0B3B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 635EAE60206120F1007D0B3B /* main.m */; };
 		635EAE6B206120F1007D0B3B /* MusicAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 635EAE6A206120F1007D0B3B /* MusicAppTests.m */; };
 		635EAE76206120F1007D0B3B /* MusicAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 635EAE75206120F1007D0B3B /* MusicAppUITests.m */; };
+		635EAE852061213D007D0B3B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 635EAE842061213C007D0B3B /* MediaPlayer.framework */; };
+		635EAE882061214D007D0B3B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 635EAE862061214C007D0B3B /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +39,6 @@
 		635EAE4E206120F1007D0B3B /* MusicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		635EAE51206120F1007D0B3B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		635EAE52206120F1007D0B3B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		635EAE54206120F1007D0B3B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		635EAE55206120F1007D0B3B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		635EAE58206120F1007D0B3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		635EAE5A206120F1007D0B3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		635EAE5D206120F1007D0B3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +50,9 @@
 		635EAE71206120F1007D0B3B /* MusicAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		635EAE75206120F1007D0B3B /* MusicAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicAppUITests.m; sourceTree = "<group>"; };
 		635EAE77206120F1007D0B3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		635EAE842061213C007D0B3B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		635EAE862061214C007D0B3B /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		635EAE872061214C007D0B3B /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				635EAE852061213D007D0B3B /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +88,7 @@
 				635EAE69206120F1007D0B3B /* MusicAppTests */,
 				635EAE74206120F1007D0B3B /* MusicAppUITests */,
 				635EAE4F206120F1007D0B3B /* Products */,
+				635EAE832061213C007D0B3B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,8 +107,8 @@
 			children = (
 				635EAE51206120F1007D0B3B /* AppDelegate.h */,
 				635EAE52206120F1007D0B3B /* AppDelegate.m */,
-				635EAE54206120F1007D0B3B /* ViewController.h */,
-				635EAE55206120F1007D0B3B /* ViewController.m */,
+				635EAE872061214C007D0B3B /* ViewController.h */,
+				635EAE862061214C007D0B3B /* ViewController.m */,
 				635EAE57206120F1007D0B3B /* Main.storyboard */,
 				635EAE5A206120F1007D0B3B /* Assets.xcassets */,
 				635EAE5C206120F1007D0B3B /* LaunchScreen.storyboard */,
@@ -130,6 +134,14 @@
 				635EAE77206120F1007D0B3B /* Info.plist */,
 			);
 			path = MusicAppUITests;
+			sourceTree = "<group>";
+		};
+		635EAE832061213C007D0B3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				635EAE842061213C007D0B3B /* MediaPlayer.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				635EAE56206120F1007D0B3B /* ViewController.m in Sources */,
+				635EAE882061214D007D0B3B /* ViewController.m in Sources */,
 				635EAE61206120F1007D0B3B /* main.m in Sources */,
 				635EAE53206120F1007D0B3B /* AppDelegate.m in Sources */,
 			);
